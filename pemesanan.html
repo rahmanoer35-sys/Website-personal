@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pemesanan Drone | AF SkyView</title>
+
+<meta name="description" content="Pilih drone profesional yang sesuai kebutuhan Anda. AF SkyView menyediakan layanan FPV Drone dan DJI Mini 3 RC untuk dokumentasi udara berkualitas tinggi.">
+
+<meta name="keywords" content="Pemesanan Drone, FPV Drone Jambi, DJI Mini 3 Jambi, Sewa Drone Jambi, Drone Rental Indonesia">
+
+<meta name="author" content="AF SkyView">
+
+<meta property="og:title" content="Pemesanan Drone | AF SkyView">
+<meta property="og:description" content="Pilih drone yang sesuai untuk event, konstruksi, properti, promosi bisnis, dan dokumentasi udara profesional.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#0A192F;
+--secondary:#112240;
+--accent:#2563EB;
+--accent-hover:#3B82F6;
+
+--bg:#020617;
+--surface:#0F172A;
+
+--text:#FFFFFF;
+--text-secondary:#CBD5E1;
+
+--border:rgba(59,130,246,0.15);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:
+linear-gradient(
+135deg,
+#020617 0%,
+#0A192F 50%,
+#112240 100%
+);
+
+color:white;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+/* ==========================
+NAVBAR
+========================== */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+
+z-index:999;
+
+background:rgba(2,6,23,.8);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.navbar{
+
+height:80px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+
+font-size:1.8rem;
+font-weight:800;
+letter-spacing:1px;
+}
+
+.logo span{
+color:#2563EB;
+}
+
+.nav-links{
+
+display:flex;
+gap:35px;
+
+list-style:none;
+}
+
+.nav-links a{
+
+text-decoration:none;
+color:white;
+
+font-weight:500;
+
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#2563EB;
+}
+
+.active{
+color:#2563EB !important;
+}
+
+.menu-toggle{
+
+display:none;
+
+font-size:2rem;
+cursor:pointer;
+}
+
+/* ==========================
+HERO
+========================== */
+
+.hero{
+
+padding-top:170px;
+padding-bottom:100px;
+
+text-align:center;
+
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+
+content:'';
+
+position:absolute;
+
+width:700px;
+height:700px;
+
+top:-250px;
+right:-250px;
+
+background:
+radial-gradient(
+circle,
+rgba(37,99,235,.3),
+transparent 70%
+);
+
+filter:blur(50px);
+}
+
+.hero-badge{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:rgba(37,99,235,.1);
+
+border:1px solid rgba(37,99,235,.25);
+
+border-radius:30px;
+
+color:#93C5FD;
+
+font-size:.9rem;
+font-weight:600;
+
+margin-bottom:25px;
+}
+
+.hero h1{
+
+font-size:4rem;
+font-weight:800;
+
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#2563EB;
+}
+
+.hero p{
+
+max-width:850px;
+
+margin:auto;
+
+color:#CBD5E1;
+
+line-height:1.9;
+
+font-size:1.1rem;
+}
+
+/* ==========================
+SECTION
+========================== */
+
+section{
+padding:80px 0;
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+
+position:absolute;
+
+top:80px;
+left:0;
+
+width:100%;
+
+background:#08111f;
+
+display:none;
+
+flex-direction:column;
+
+padding:25px;
+}
+
+.nav-links.active-menu{
+display:flex;
+}
+
+.hero h1{
+font-size:2.6rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container navbar">
+
+<div class="logo">
+AF <span>SkyView</span>
+</div>
+
+<ul class="nav-links" id="menu">
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="pemesanan.html" class="active">
+Pemesanan Drone
+</a>
+</li>
+
+<li>
+<a href="index.html#about">
+Tentang Kami
+</a>
+</li>
+
+<li>
+<a href="index.html#preview">
+Hasil Video
+</a>
+</li>
+
+<li>
+<a href="index.html#contact">
+Kontak
+</a>
+</li>
+
+</ul>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-badge">
+🚁 Drone Rental Premium
+</div>
+
+<h1>
+Pilih Drone <span>Yang Anda Butuhkan</span>
+</h1>
+
+<p>
+
+AF SkyView menyediakan pilihan drone profesional untuk kebutuhan dokumentasi udara, event, promosi bisnis, konstruksi, properti, hingga produksi video cinematic berkualitas tinggi.
+
+</p>
+
+</div>
+
+</section>
+<!-- ==========================
+PILIHAN DRONE
+========================== -->
+
+<section id="drone-list">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Drone Profesional AF SkyView
+</h2>
+
+<p>
+Pilih drone yang sesuai dengan kebutuhan dokumentasi dan proyek Anda.
+</p>
+
+</div>
+
+<div class="drone-grid">
+
+<!-- FPV DRONE -->
+
+<div class="drone-card">
+
+<div class="drone-image">
+
+<img
+loading="lazy"
+src="gambar/fpv.jpg"
+alt="FPV Drone 5 Inch">
+
+</div>
+
+<div class="drone-content">
+
+<span class="drone-badge">
+High Speed Cinematic
+</span>
+
+<h3>
+FPV Drone 5 Inch
+</h3>
+
+<p>
+
+Drone FPV profesional untuk video cinematic berkecepatan tinggi. Cocok untuk event olahraga, otomotif, promosi bisnis, touring, dan konten kreatif modern.
+
+</p>
+
+<ul class="feature-list">
+
+<li>✓ Video 4K Cinematic</li>
+
+<li>✓ Pilot Profesional</li>
+
+<li>✓ Manuver Dinamis</li>
+
+<li>✓ Cocok Untuk Event</li>
+
+</ul>
+
+<a href="fpv-drone.html" class="btn-card">
+Lihat Paket
+</a>
+
+</div>
+
+</div>
+
+<!-- DJI MINI 3 -->
+
+<div class="drone-card">
+
+<div class="drone-image">
+
+<img
+loading="lazy"
+src="gambar/aerial.jpg"
+alt="DJI Mini 3 RC">
+
+</div>
+
+<div class="drone-content">
+
+<span class="drone-badge">
+Professional Aerial
+</span>
+
+<h3>
+DJI Mini 3 RC
+</h3>
+
+<p>
+
+Drone aerial modern dengan kualitas video 4K HDR yang stabil dan detail. Ideal untuk dokumentasi proyek, wedding, wisata, properti, dan kebutuhan komersial.
+
+</p>
+
+<ul class="feature-list">
+
+<li>✓ Kamera 4K HDR</li>
+
+<li>✓ GPS Stabilization</li>
+
+<li>✓ Return To Home</li>
+
+<li>✓ Cocok Untuk Proyek</li>
+
+</ul>
+
+<a href="dji-mini3.html" class="btn-card">
+Lihat Paket
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/* ==========================
+SECTION TITLE
+========================== */
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+}
+
+.section-title h2{
+
+font-size:2.8rem;
+
+margin-bottom:15px;
+
+font-weight:800;
+}
+
+.section-title p{
+
+color:#CBD5E1;
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+}
+
+/* ==========================
+DRONE GRID
+========================== */
+
+.drone-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(380px,1fr));
+
+gap:35px;
+}
+
+/* ==========================
+DRONE CARD
+========================== */
+
+.drone-card{
+
+background:rgba(15,23,42,.75);
+
+border:1px solid rgba(59,130,246,.12);
+
+border-radius:30px;
+
+overflow:hidden;
+
+backdrop-filter:blur(15px);
+
+transition:.4s;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.25);
+}
+
+.drone-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#2563EB;
+
+box-shadow:
+0 20px 60px rgba(37,99,235,.18);
+}
+
+.drone-image img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+display:block;
+}
+
+.drone-content{
+
+padding:30px;
+}
+
+.drone-badge{
+
+display:inline-block;
+
+padding:8px 14px;
+
+border-radius:30px;
+
+background:rgba(37,99,235,.12);
+
+border:1px solid rgba(37,99,235,.25);
+
+color:#93C5FD;
+
+font-size:.8rem;
+
+font-weight:600;
+
+margin-bottom:18px;
+}
+
+.drone-content h3{
+
+font-size:1.8rem;
+
+margin-bottom:15px;
+}
+
+.drone-content p{
+
+color:#CBD5E1;
+
+line-height:1.9;
+
+margin-bottom:20px;
+}
+
+.feature-list{
+
+list-style:none;
+
+margin-bottom:30px;
+}
+
+.feature-list li{
+
+padding:8px 0;
+
+color:#E2E8F0;
+}
+
+.btn-card{
+
+display:inline-block;
+
+padding:14px 28px;
+
+background:#2563EB;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+}
+
+.btn-card:hover{
+
+background:#3B82F6;
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 25px rgba(37,99,235,.4);
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.drone-grid{
+
+grid-template-columns:1fr;
+}
+
+.section-title h2{
+
+font-size:2rem;
+}
+
+}
+
+</style>
+<!-- ==========================
+FOOTER
+========================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-brand">
+
+<h3>
+AF <span>SkyView</span>
+</h3>
+
+<p>
+Professional Drone Rental & Aerial Documentation untuk kebutuhan event, promosi bisnis, konstruksi, properti, inspeksi proyek, dan produksi konten berkualitas tinggi.
+</p>
+
+</div>
+
+<div>
+
+<h4>Kontak</h4>
+
+<ul class="footer-links">
+<li>📱 082217883087</li>
+<li>📧 panduayman15@gmail.com</li>
+<li>📸 @panduaf_15</li>
+<li>📍 Jambi, Indonesia</li>
+</ul>
+
+</div>
+
+<div>
+
+<h4>Jam Operasional</h4>
+
+<ul class="footer-links">
+<li>Senin - Minggu</li>
+<li>08.00 - 21.00 WIB</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+© 2026 AF SkyView. All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<style>
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+margin-top:80px;
+
+padding:80px 0 30px;
+
+background:#010814;
+
+border-top:1px solid rgba(255,255,255,.06);
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:40px;
+}
+
+.footer-brand h3{
+
+font-size:2rem;
+
+margin-bottom:15px;
+}
+
+.footer-brand span{
+color:#2563EB;
+}
+
+.footer-brand p{
+
+color:#CBD5E1;
+
+line-height:1.9;
+}
+
+footer h4{
+
+margin-bottom:15px;
+}
+
+.footer-links{
+
+list-style:none;
+}
+
+.footer-links li{
+
+padding:8px 0;
+
+color:#CBD5E1;
+}
+
+.footer-bottom{
+
+margin-top:50px;
+
+padding-top:25px;
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-bottom p{
+
+color:#94A3B8;
+}
+
+/* ==========================
+MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu(){
+
+document
+.getElementById("menu")
+.classList.toggle("active-menu");
+
+}
+
+</script>
+
+</body>
+</html>
